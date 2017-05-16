@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  width: auto;
+  
+  }
+html {
+    font-size: 18px;
+}
+.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+.content {
+    color: #444;
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: hidden;
+    padding: 0 0 0 85px;
+    text-rendering: optimizelegibility;
+    width: 100%;
+}
+.text {
+	
+    float: right;
+    text-align: center;
+
+}
+.SmileOrNo {
+	 text-align: center;
+}
+.SmileOrNo span::before {
+    color: #09f;
+    content: "\"";
+    font-size: 2rem;
+    left: 2rem;
+    position: absolute;
+    top: 2rem;
+  
+}
+.SmileOrNo span {
+    display: inline-block;
+    font-size: 10rem;
+    position: relative;
+    transform: rotate(90deg);
+}
+.SmileOrNo span:hover::before {
+    color: #999;
+    content: "))";
+    font-size: 1rem;
+    left: 0;
+    margin-top: 0.25rem;
+    position: absolute;
+    top: 50%;
+}
+.SmileOrNo span:hover::after {
+    content: "/";
+}
+.SmileOrNo span::after {
+    content: ")";
+}
